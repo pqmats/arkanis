@@ -1,14 +1,20 @@
-//import Button from '@/components/molecules/Buttons'
 import Header from '@/components/organisms/Header'
+import Banner from '@/components/organisms/Banner'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Header/>
+    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
+      
+      {/* Header fixo */}
+      <Header />
+
+      {/* Conteúdo da página com padding superior para compensar o header */}
+      <main className="pt-[72px]"> {/* Ajuste esse valor conforme a altura real do seu header */}
+        <Banner />
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        
+
+      <footer className="flex gap-[24px] flex-wrap items-center justify-center p-8 sm:p-20">
+        {/* conteúdo do footer */}
       </footer>
     </div>
   );
