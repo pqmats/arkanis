@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { Play, Heart } from 'lucide-react'
 
 export default function Banner() {
   return (
@@ -29,12 +30,16 @@ export default function Banner() {
             Exclusivo na Arkanis. Temporada completa disponível agora.
           </p>
 
+
           <Link
             href="/assistir"
-            className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md transition-all"
+            className="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md transition-all"
           >
             Assistir Agora
+            <Play size={18} className="ml-2" /> {/* Ícone na mesma linha, após o texto */}
           </Link>
+
+
         </div>
       </div>
     </div>
