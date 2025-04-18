@@ -1,4 +1,4 @@
-import Button from '@/components/molecules/Buttons'
+//import Button from '@/components/molecules/Buttons'
 import Header from '@/components/organisms/Header'
 
 export default function Home() {
